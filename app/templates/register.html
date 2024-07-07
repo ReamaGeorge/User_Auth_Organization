@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form method="POST" action="/auth/register">
+        {{ form.hidden_tag() }}
+        <div>
+            <label for="userId">Username</label>
+            {{ form.userId }}
+        </div>
+        <div>
+            <label for="email">Email</label>
+            {{ form.email }}
+        </div>
+        <div>
+            <label for="password">Password</label>
+            {{ form.password }}
+        </div>
+        <div>
+            <label for="confirm_password">Confirm Password</label>
+            {{ form.confirm_password }}
+        </div>
+        <div>
+            <label for="firstName">First Name</label>
+            {{ form.firstName }}
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            {{ form.lastName }}
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            {{ form.phone }}
+        </div>
+        <div>
+            <label for="organization_name">Organization Name</label>
+            {{ form.organization_name }}
+        </div>
+        <div>
+            <label for="organization_description">Organization Description</label>
+            {{ form.organization_description }}
+        </div>
+        <div>
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+</body>
+</html>
